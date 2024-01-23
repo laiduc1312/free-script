@@ -4,7 +4,7 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/khoamobile111977/scri
 ----------------
 loadstring(game:HttpGet("https://raw.githubusercontent.com/khoamobile111977/scriptpaid/main/ditblox.txt"))()
 ----------------
-loadstring(game:HttpGet("https://raw.githubusercontent.com/khoamobile111977/scriptpaid/main/kaitunroyx.txt"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/khoamobile111977/scriptpaid/main/wazure.txt"))()
 ----------------
 loadstring(game:HttpGet("https://raw.githubusercontent.com/khoamobile111977/scriptpaid/main/royx.txt"))()
 
