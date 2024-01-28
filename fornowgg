@@ -2,7 +2,7 @@ https://www.mediafire.com/file/e7czr1f1kmy3s99/FakeSynapse.apk/file (Tải cái 
 ----------------
 loadstring(game:HttpGet("https://raw.githubusercontent.com/khoamobile111977/scriptpaid/main/banana.txt"))()
 ----------------
-loadstring(game:HttpGet("https://raw.githubusercontent.com/khoamobile111977/scriptpaid/main/ditblox.txt"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/khoamobile111977/scriptpaid/main/luxurykaitun.txt"))()
 ----------------
 loadstring(game:HttpGet("https://raw.githubusercontent.com/khoamobile111977/scriptpaid/main/wazure.txt"))()
 ----------------
