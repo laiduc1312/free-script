@@ -3,3 +3,5 @@ https://www.mediafire.com/file/e7czr1f1kmy3s99/FakeSynapse.apk/file
 BYPASS FLUXUS
 Check 1  javascript:(function() { window.location.href = "https://fluxteam.net/android/checkpoint/check1.php"; })();
 Key      javascript:(function() { window.location.href = "https://fluxteam.net/android/checkpoint/main.php"; })();
+----------------
+loadstring(game:HttpGet('https://raw.githubusercontent.com/laiduc1312/free-script/main/luxurykaitun'))() 
