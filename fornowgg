@@ -5,3 +5,5 @@ Check 1  javascript:(function() { window.location.href = "https://fluxteam.net/a
 Key      javascript:(function() { window.location.href = "https://fluxteam.net/android/checkpoint/main.php"; })();
 ----------------
 loadstring(game:HttpGet('https://raw.githubusercontent.com/laiduc1312/free-script/main/luxurykaitun'))() 
+----------------
+loadstring(game httpget('https://raw.githubusercontent.com/laiduc1312/free-script/main/autobounty'))() 
