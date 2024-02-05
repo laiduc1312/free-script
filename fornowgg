@@ -7,5 +7,5 @@ Key      javascript:(function() { window.location.href = "https://fluxteam.net/a
 loadstring(game:HttpGet('https://raw.githubusercontent.com/laiduc1312/free-script/main/luxurykaitun'))() 
 ----------------
 loadstring(game:HttpGet('https://raw.githubusercontent.com/laiduc1312/free-script/main/autobounty'))() 
-
-
+----------------
+loadstring(game:HttpGet("https://raw.githubusercontent.com/NightsTimeZ/Donate-Me/main/free%20bf.lua"))()
