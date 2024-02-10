@@ -42,7 +42,7 @@ spawn(function()
         end
     end)
 end)
-repeat wait(30) until game:IsLoaded(30) and game.Players.LocalPlayer
+repeat wait(35) until game:IsLoaded(35) and game.Players.LocalPlayer
 _G.KaitanMode = true
 
 -- Candy Event
