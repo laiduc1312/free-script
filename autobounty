@@ -1,79 +1,213 @@
-getgenv().SpamSkill = true
+script_key = "JrIoDmvHqWbaWomMruBgKEXVEJlyCUyj"
 
-getgenv().AutoUseRaceV3 = true
+getgenv().WeaponsSetting = {
 
-getgenv().AutoUseRacev4 = true
+    ["Melee"] = {
 
-getgenv().SpamSkillOnRaceV4 = true
+        ["Enable"] = true,
 
-getgenv().Invisible = true
+        ["Delay"] = 3, 
 
-getgenv().InCombatNoReset = false
+        ["SwitchNextWeaponIfCooldown"] = true,
 
-getgenv().Team = "Marines" -- Marines
+        ["Skills"] = {
 
-getgenv().TweenSpeed = 310 -- 350 max or Get Tp Back
+            ["Z"] = {
 
- getgenv().Setting = { -- Select Weapon, Self Explain
+                ["Enable"] = true,
 
-        ["Melee"] = {["Enable"] = true,["Delay"] = 2,
+                ["NoPredict"] = false, -- For Dragon Tailon, Disable it 
 
-          ["Skills"] = {
+                ["HoldTime"] = 0,
 
-            ["Z"] = {["Enable"] = true,["HoldTime"] = 0,["TimeToNextSkill"] = 0,},
+                ["TimeToNextSkill"] = 0,
 
-            [ "X"] = {["Enable"] = true,["HoldTime"] = 0, ["TimeToNextSkill"] = 0,},
+            },
 
-            ["C"] = {["Enable"] = true,["HoldTime"] = 0, ["TimeToNextSkill"] = 0,},
+        [ "X"] = {
+
+                ["Enable"] = true,
+
+                ["HoldTime"] = 0,
+
+                ["TimeToNextSkill"] = 0,
+
+            },
+
+ 
+
+            ["C"] = {
+
+                ["Enable"] = true,
+
+                ["HoldTime"] = 0,
+
+                ["TimeToNextSkill"] = 0,
 
             },
 
         },
 
-        ["Blox Fruit"] = {["Enable"] = true, ["Delay"] = 2.5,
+    },
 
-            ["Skills"] = {
+    ["Blox Fruit"] = {
 
-                ["Z"] = {["Enable"] = true, ["HoldTime"] = 0, ["TimeToNextSkill"] = 0,},
+        ["Enable"] = false,
 
-                ["X"] = { ["Enable"] = true, ["HoldTime"] = 0, ["TimeToNextSkill"] = 0,},
+        ["Delay"] = 3,
 
-                ["C"] = { ["Enable"] = true, ["HoldTime"] = 0,["TimeToNextSkill"] = 0, },
+        ["SwitchNextWeaponIfCooldown"] = true,
 
-                ["V"] = { ["Enable"] = false, ["HoldTime"] = 0,["TimeToNextSkill"] = 0,},
+        ["Skills"] = {
 
-                ["F"] = {["Enable"] = true,["HoldTime"] = 0, ["TimeToNextSkill"] = 0,},
+            ["Z"] = {
+
+                ["Enable"] = true,
+
+                ["HoldTime"] = 0,
+
+                ["TimeToNextSkill"] = 0,
+
+            },
+
+            ["X"] = {
+
+                ["Enable"] = true,
+
+                ["HoldTime"] = 0,
+
+                ["TimeToNextSkill"] = 0,
+
+            },
+
+ 
+
+            ["C"] = {
+
+                ["Enable"] = true,
+
+                ["HoldTime"] = 0,
+
+                ["TimeToNextSkill"] = 0,
+
+            },
+
+            ["V"] = {
+
+                ["Enable"] = true,
+
+                ["HoldTime"] = 2,
+
+                ["TimeToNextSkill"] = 0,
+
+            },
+
+            ["F"] = {
+
+                ["Enable"] = false,
+
+                ["HoldTime"] = 0,
+
+                ["TimeToNextSkill"] = 0,
 
             },
 
         },
 
-        ["Sword"] = { ["Enable"] = true, ["Delay"] = 1.5,
+    },
 
-            ["Skills"] = {
+    ["Sword"] = {
 
-                ["Z"] = {["Enable"] = true, ["HoldTime"] = 0.5,["TimeToNextSkill"] = 0,},
+        ["Enable"] = true,
 
-                ["X"] = {["Enable"] = true, ["HoldTime"] = 0.5, ["TimeToNextSkill"] = 0,},
+        ["Delay"] = 3,
+
+        ["Skills"] = {
+
+            ["Z"] = {
+
+                ["Enable"] = true,
+
+                ["HoldTime"] = 1,
+
+                ["TimeToNextSkill"] = 0,
+
+            },
+
+            ["X"] = {
+
+                ["Enable"] = true,
+
+                ["HoldTime"] = 0,
+
+                ["TimeToNextSkill"] = 0,
 
             },
 
         },
 
-        ["Gun"] = {["Enable"] = true, ["Delay"] = 1,
+    },
 
-            ["Skills"] = {
+    ["Gun"] = {
 
-                ["Z"] = {["Enable"] = false,["HoldTime"] = 0,["TimeToNextSkill"] = 0,},
+        ["Enable"] = true,
 
-                ["X"] = {["Enable"] = true,["HoldTime"] = 0,["TimeToNextSkill"] = 0,
+        ["Delay"] = 0.5,
 
-                },
+        ["Skills"] = {
+
+            ["Z"] = {
+
+                ["Enable"] = false,
+
+                ["HoldTime"] = 0.1,
+
+                ["TimeToNextSkill"] = 0,
 
             },
 
-        }
+            ["X"] = {
 
-    }
+                ["Enable"] = true,
 
- loadstring(game:HttpGet('https://raw.githubusercontent.com/vinhuchi/temp-repos/main/FreeAutoBounty.lua'))()
+                ["HoldTime"] = 0,
+
+                ["TimeToNextSkill"] = 0,
+
+            },
+
+        },
+
+    },
+
+}
+
+getgenv().Theme = { -- getgenv().Theme = false if you want to disable
+
+    OldTheme = false,
+
+    Name="Raiden", --"Raiden","Ayaka","Hutao","Yelan","Miko","Nahida","Ganyu","Keqing","Nilou","Barbara","Zhongli","Layla"
+
+    Custom={
+
+            ["Enable"] = true,
+
+            ['char_size'] = UDim2.new(0.668, 0, 1.158, 0),
+
+            ['char_pos'] = UDim2.new(0.463, 0, -0.105, 0),
+
+            ['title_color'] = Color3.fromRGB(175, 238, 238),
+
+            ['titleback_color'] = Color3.fromRGB(119, 136, 153),
+
+            ['list_color'] = Color3.fromRGB(204, 255, 255),
+
+            ['liststroke_color'] = Color3.fromRGB(119, 136, 153),
+
+            ['button_color'] = Color3.fromRGB(119, 136, 153)
+
+       }
+
+}
+
+loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/b6d24ef1f7dab9c7b22f259a3db6c47e.lua"))()
