@@ -84,7 +84,7 @@ getgenv().WeaponsSetting = {
 
             ["C"] = {
 
-                ["Enable"] = true,
+                ["Enable"] = false,
 
                 ["HoldTime"] = 0,
 
@@ -94,7 +94,7 @@ getgenv().WeaponsSetting = {
 
             ["V"] = {
 
-                ["Enable"] = true,
+                ["Enable"] = false,
 
                 ["HoldTime"] = 2,
 
