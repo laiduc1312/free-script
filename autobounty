@@ -93,7 +93,7 @@ getgenv().WeaponsSetting = {
 }
 getgenv().Theme = { -- getgenv().Theme = false if you want to disable
     OldTheme = false,
-    Name="mmb", --"Raiden","Ayaka","Hutao","Yelan","Miko","Nahida","Ganyu","Keqing","Nilou","Barbara","Zhongli","Layla"
+    Name="Raiden", --"Raiden","Ayaka","Hutao","Yelan","Miko","Nahida","Ganyu","Keqing","Nilou","Barbara","Zhongli","Layla"
     Custom={
             ["Enable"] = true,
             ['char_size'] = UDim2.new(0.668, 0, 1.158, 0),
