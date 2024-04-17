@@ -100,9 +100,9 @@ getgenv().Theme = { -- getgenv().Theme = false if you want to disable
             ['char_size'] = UDim2.new(0.668, 0, 1.158, 0),
             ['char_pos'] = UDim2.new(0.463, 0, -0.105, 0),
             ['title_color'] = Color3.fromRGB(199, 177, 137),
-            ['titleback_color'] = Color3.fromRGB(199, 177, 137),
+            ['titleback_color'] = Color3.fromRGB(255, 255, 255),
             ['list_color'] = Color3.fromRGB(219, 137, 90),
-            ['liststroke_color'] = Color3.fromRGB(219, 137, 90),
+            ['liststroke_color'] = Color3.fromRGB(255, 255, 255),
             ['button_color'] = Color3.fromRGB(199, 177, 137)
        }
 }
