@@ -99,11 +99,11 @@ getgenv().Theme = { -- getgenv().Theme = false if you want to disable
             ["Enable"] = true,
             ['char_size'] = UDim2.new(0.668, 0, 1.158, 0),
             ['char_pos'] = UDim2.new(0.463, 0, -0.105, 0),
-            ['title_color'] = Color3.fromRGB(255, 221, 252),
-            ['titleback_color'] = Color3.fromRGB(169, 20, 255),
-            ['list_color'] = Color3.fromRGB(255, 221, 252),
-            ['liststroke_color'] = Color3.fromRGB(151, 123, 207),
-            ['button_color'] = Color3.fromRGB(255, 221, 252)
+            ['title_color'] = Color3.fromRGB(199, 177, 137),
+            ['titleback_color'] = Color3.fromRGB(199, 177, 137),
+            ['list_color'] = Color3.fromRGB(199, 177, 137),
+            ['liststroke_color'] = Color3.fromRGB(199, 177, 137),
+            ['button_color'] = Color3.fromRGB(199, 177, 137)
        }
 }
 loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/b6d24ef1f7dab9c7b22f259a3db6c47e.lua"))()
