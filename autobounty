@@ -93,7 +93,7 @@ getgenv().WeaponsSetting = {
     },
 }
 getgenv().Theme = { -- getgenv().Theme = false if you want to disable
-    OldTheme = false,
+    OldTheme = True,
     Name="Bear", --"Raiden","Ayaka","Hutao","Yelan","Miko","Nahida","Ganyu","Keqing","Nilou","Barbara","Zhongli","Layla"
     Custom={
             ["Enable"] = true,
