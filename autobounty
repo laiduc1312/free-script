@@ -1,83 +1,109 @@
-getgenv().config = {
-    ["Team"] = "Pirates",
-    ["FPS Boost"] = true,
-    ["LocalPlayer"] = {
-        ["Ken Haki"] = true,
-        ["Invisible"] = true,
-        ["Click Delay"] = 0.35,
-        ["Panic Mode"] = {
-            ["Skip Player"] = true,
-            ["Run"] = 3500,
-            ["Max"] = 5000,
-        }
-    },
-    ["settings"] = {
-        ["White Screen"] = false,
-        ["Region_Hop"] = {
-            ["Enabled"] = true,
-            ["Value"] = "Singapore"
-        },
-        ["Webhook"] = {
-            ["Enabled"] = false,
-            ["URL"] = {
-                ["Discord"] = "",
-                ["Thumbnail"] = "default"
-            }
-        },
-        ["Chatkill"] = {
-            ["Enabled"] = false,
-            ["Text"] = {
-                "config by xFein!"
-            }
-        },
-        ["FPS Locker"] = {
-            ["Enabled"] = false,
-            ["Value"] = 12
-        },
-        ["Bounty Lock"] = {
-            ["Enabled"] = true,
-            ["Value"] = 30000000
-        },
-        ["Ignore"] = {
-            ["Buddha Users"] = true,
-            ["Portal Users"] = true,
-            ['Some Annoying V4'] = true,
-        },
-        ["Stats"] = {
-            ["Auto Reset Stat If Doesnt Match"] = false,
-            ["Points"] = "Sword"
+script_key = ""
+getgenv().Team = "Pirates" -- Pirates,Marines
+
+getgenv().WeaponsSetting = {
+    ["Melee"] = {
+        ["Enable"] = true,
+        ["Delay"] = 3, 
+        ["SwitchNextWeaponIfCooldown"] = true,
+        ["Skills"] = {
+            ["Z"] = {
+                ["Enable"] = true,
+                ["NoPredict"] = true, -- For Dragon Tailon, Disable it 
+                ["HoldTime"] = 0.6,
+                ["TimeToNextSkill"] = 0.5,
+            },
+        [ "X"] = {
+                ["Enable"] = true,
+                ["HoldTime"] = 0.2,
+                ["TimeToNextSkill"] = 0.5,
+            },
+
+            ["C"] = {
+                ["Enable"] = true,
+                ["HoldTime"] = 0.1,
+                ["TimeToNextSkill"] = 0.5,
+            },
         },
     },
-    ["Skills"] = {
-        ["Melee"] = {
-            ["Time"] = 2,
-            ["Enabled"] = true,
-            ["Z"] = {["Enabled"] = true, ["HoldTime"] = 1},
-            ["X"] = {["Enabled"] = true, ["HoldTime"] = 0},
-            ["C"] = {["Enabled"] = true, ["HoldTime"] = 0}
+    ["Blox Fruit"] = {
+        ["Enable"] = false,
+        ["Delay"] = 0,
+        ["SwitchNextWeaponIfCooldown"] = true,
+        ["Skills"] = {
+            ["Z"] = {
+                ["Enable"] = false,
+                ["HoldTime"] = 0,
+                ["TimeToNextSkill"] = 0,
+            },
+            ["X"] = {
+                ["Enable"] = false,
+                ["HoldTime"] = 0,
+                ["TimeToNextSkill"] = 0,
+            },
+
+            ["C"] = {
+                ["Enable"] = false,
+                ["HoldTime"] = 0,
+                ["TimeToNextSkill"] = 0,
+            },
+            ["V"] = {
+                ["Enable"] = false,
+                ["HoldTime"] = 0,
+                ["TimeToNextSkill"] = 0,
+            },
+            ["F"] = {
+                ["Enable"] = false,
+                ["HoldTime"] = 0,
+                ["TimeToNextSkill"] = 0,
+            },
         },
-        ["Fruit"] = {
-            ["Time"] = 4,
-            ["Enabled"] = false,
-            ["Z"] = {["Enabled"] = true, ["HoldTime"] = 0},
-            ["X"] = {["Enabled"] = true, ["HoldTime"] = 0},
-            ["C"] = {["Enabled"] = true, ["HoldTime"] = 0},
-            ["V"] = {["Enabled"] = false, ["HoldTime"] = 0},
-            ["F"] = {["Enabled"] = true, ["HoldTime"] = 0}
+    },
+    ["Sword"] = {
+        ["Enable"] = true,
+        ["Delay"] = 1,
+        ["Skills"] = {
+            ["Z"] = {
+                ["Enable"] = true,
+                ["HoldTime"] = 0.3,
+                ["TimeToNextSkill"] = 0.5,
+            },
+            ["X"] = {
+                ["Enable"] = true,
+                ["HoldTime"] = 0.4,
+                ["TimeToNextSkill"] = 0.5,
+            },
         },
-        ["Sword"] = {
-            ["Time"] = 2,
-            ["Enabled"] = true,
-            ["Z"] = {["Enabled"] = true, ["HoldTime"] = 0},
-            ["X"] = {["Enabled"] = true, ["HoldTime"] = 0},
+    },
+    ["Gun"] = {
+        ["Enable"] = false,
+        ["Delay"] = 0,
+        ["Skills"] = {
+            ["Z"] = {
+                ["Enable"] = false,
+                ["HoldTime"] = 0,
+                ["TimeToNextSkill"] = 0,
+            },
+            ["X"] = {
+                ["Enable"] = false,
+                ["HoldTime"] = 0,
+                ["TimeToNextSkill"] = 0,
+            },
         },
-        ["Gun"] = {
-            ["Time"] = 1,
-            ["Enabled"] = false,
-            ["GunMode"] = true,
-            ["Z"] = {["Enabled"] = true, ["HoldTime"] = 0},
-            ["X"] = {["Enabled"] = true, ["HoldTime"] = 0},
-        }
-    }
+    },
 }
-loadstring(game:HttpGet(("https://raw.githubusercontent.com/LeNguyenBaoPhuc/BloxFruits/main/Bounty.lua")))()
+getgenv().Theme = { -- getgenv().Theme = false if you want to disable
+    OldTheme = false,
+    Name="Ayaka", --"Raiden","Ayaka","Hutao","Yelan","Miko","Nahida","Ganyu","Keqing","Nilou","Barbara","Zhongli","Layla"
+    Custom={
+            ["Enable"] = true,
+            ['char_size'] = UDim2.new(0.668, 0, 1.158, 0),
+            ['char_pos'] = UDim2.new(0.463, 0, -0.105, 0),
+            ['title_color'] = Color3.fromRGB(255, 221, 252),
+            ['titleback_color'] = Color3.fromRGB(169, 20, 255),
+            ['list_color'] = Color3.fromRGB(255, 221, 252),
+            ['liststroke_color'] = Color3.fromRGB(151, 123, 207),
+            ['button_color'] = Color3.fromRGB(255, 221, 252)
+       }
+}
+loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/b6d24ef1f7dab9c7b22f259a3db6c47e.lua"))()
